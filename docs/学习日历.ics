@@ -1,0 +1,1608 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agent Study Plan//CN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Agent 方向第一阶段（12 周）
+X-WR-TIMEZONE:Asia/Shanghai
+BEGIN:VTIMEZONE
+TZID:Asia/Shanghai
+BEGIN:STANDARD
+DTSTART:19700101T000000
+TZOFFSETFROM:+0800
+TZOFFSETTO:+0800
+TZNAME:CST
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:agent-day-20261101@agent-study
+DTSTART;TZID=Asia/Shanghai:20261101T193000
+DTEND;TZID=Asia/Shanghai:20261101T210000
+SUMMARY:第0周 热身｜终端练习（cd / dir / mkdir 各 3 遍）+ 
+ 把 
+DESCRIPTION:核心（1.5h，先做这个）：终端练习（cd / dir / m
+ kdir 各 3 遍）+ 把 hello.py 改成问两个问题、输出三行自
+ 我介绍\n加餐（有余力再做）：补齐 01–05 五张细节截
+ 图\n当日产出：hello.py v2 + 5 张细节截图 + 第 4 次提交\n
+ 日期：11月1日 周日
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：终端练习（cd / dir / mkdir 各 3 
+ 遍）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261102@agent-study
+DTSTART;TZID=Asia/Shanghai:20261102T193000
+DTEND;TZID=Asia/Shanghai:20261102T220000
+SUMMARY:第1周 任务一｜变量与数据类型、input()、f-string 
+ → 动手写 B
+DESCRIPTION:核心（2.5h，先做这个）：变量与数据类型、inp
+ ut()、f-string → 动手写 BMI 计算器（环境已于 10/31 完成
+ ）\n加餐（有余力再做）：BMI 加区间判断（偏瘦/正常/
+ 超重/肥胖）并输出一句建议\n当日产出：bmi.py：输入 1.7
+ 5 / 70 输出 22.9 并判断为「正常」\n日期：11月2日 周一
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：变量与数据类型、input()、f-stri
+ ng → 动
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261103@agent-study
+DTSTART;TZID=Asia/Shanghai:20261103T193000
+DTEND;TZID=Asia/Shanghai:20261103T220000
+SUMMARY:第1周 任务一｜Python 基础语法：变量、类型、流
+ 程控制（官方教程 3–5 
+DESCRIPTION:核心（2.5h，先做这个）：Python 基础语法：变
+ 量、类型、流程控制（官方教程 3–5 章）+ 小练习\n加
+ 餐（有余力再做）：BMI 升级：加区间判断（偏瘦 / 正常
+  / 超重），输出一句建议\n当日产出：3 个练习脚本\n日
+ 期：11月3日 周二
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：Python 基础语法：变量、类型、
+ 流程控制（官方教程 
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261104@agent-study
+DTSTART;TZID=Asia/Shanghai:20261104T193000
+DTEND;TZID=Asia/Shanghai:20261104T220000
+SUMMARY:第1周 任务一｜函数、类、异常处理：把练习改写
+ 成函数化结构
+DESCRIPTION:核心（2.5h，先做这个）：函数、类、异常处理
+ ：把练习改写成函数化结构\n加餐（有余力再做）：猜
+ 数字加难度选择（1-10 / 1-100 / 1-1000）\n当日产出：重构
+ 后的脚本\n日期：11月4日 周三
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：函数、类、异常处理：把练习
+ 改写成函数化结构
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261105@agent-study
+DTSTART;TZID=Asia/Shanghai:20261105T193000
+DTEND;TZID=Asia/Shanghai:20261105T220000
+SUMMARY:第1周 任务一｜类型提示 typing：给函数加注解，
+ 跑通 mypy / ruf
+DESCRIPTION:核心（2.5h，先做这个）：类型提示 typing：给
+ 函数加注解，跑通 mypy / ruff\n加餐（有余力再做）：成
+ 绩统计加「按分数排序」和「输出高于平均分的人」\n
+ 当日产出：类型检查通过截图\n日期：11月5日 周四
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：类型提示 typing：给函数加注解
+ ，跑通 mypy /
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261106@agent-study
+DTSTART;TZID=Asia/Shanghai:20261106T193000
+DTEND;TZID=Asia/Shanghai:20261106T220000
+SUMMARY:第1周 任务一｜依赖与项目结构：pyproject.toml、.env
+ 、模块拆分
+DESCRIPTION:核心（2.5h，先做这个）：依赖与项目结构：pyp
+ roject.toml、.env、模块拆分\n加餐（有余力再做）：词频
+ 统计改成统计字符，对比两种结果差异\n当日产出：工
+ 程化骨架\n日期：11月6日 周五
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：依赖与项目结构：pyproject.toml
+ 、.env、
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261107@agent-study
+DTSTART;TZID=Asia/Shanghai:20261107T193000
+DTEND;TZID=Asia/Shanghai:20261107T223000
+SUMMARY:第1周 任务一｜整合本周代码为可运行项目，写 RE
+ ADME（安装 / 运行 / 
+DESCRIPTION:核心（3.0h，先做这个）：整合本周代码为可运
+ 行项目，写 README（安装 / 运行 / 依赖版本）\n加餐（有
+ 余力再做）：读 requests 官方 Quickstart 10 分钟，换一个接
+ 口再跑\n当日产出：README v1\n日期：11月7日 周六
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：整合本周代码为可运行项目，
+ 写 README（安装 / 运
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261108@agent-study
+DTSTART;TZID=Asia/Shanghai:20261108T193000
+DTEND;TZID=Asia/Shanghai:20261108T210000
+SUMMARY:第1周 任务一｜复盘 20 分钟：补 .gitignore，首次推
+ 送到远程仓库
+DESCRIPTION:核心（1.5h，先做这个）：复盘 20 分钟：补 .git
+ ignore，首次推送到远程仓库\n加餐（有余力再做）：补 .
+ gitignore 排除 __pycache__，再写一条 commit\n当日产出：远程
+ 仓库链接\n日期：11月8日 周日
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：复盘 20 分钟：补 .gitignore，首
+ 次推送到远
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261109@agent-study
+DTSTART;TZID=Asia/Shanghai:20261109T193000
+DTEND;TZID=Asia/Shanghai:20261109T220000
+SUMMARY:第2周 任务一｜事件循环与 async/await 概念，写第
+ 一个协程
+DESCRIPTION:核心（2.5h，先做这个）：事件循环与 async/await
+  概念，写第一个协程\n加餐（有余力再做）：把第一个
+ 协程改成顺序执行两个 sleep，记录耗时对比\n当日产出
+ ：协程 demo\n日期：11月9日 周一
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：事件循环与 async/await 概念，写
+ 第一个协程
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261110@agent-study
+DTSTART;TZID=Asia/Shanghai:20261110T193000
+DTEND;TZID=Asia/Shanghai:20261110T220000
+SUMMARY:第2周 任务一｜asyncio.gather 并发：改造脚本并发请
+ 求多个 HTT
+DESCRIPTION:核心（2.5h，先做这个）：asyncio.gather 并发：改
+ 造脚本并发请求多个 HTTP 接口\n加餐（有余力再做）：
+ 并发数从 3 改成 10，观察总耗时变化\n当日产出：并发
+ 脚本 v1\n日期：11月10日 周二
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：asyncio.gather 并发：改造脚本并
+ 发请求多个
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261111@agent-study
+DTSTART;TZID=Asia/Shanghai:20261111T193000
+DTEND;TZID=Asia/Shanghai:20261111T220000
+SUMMARY:第2周 任务一｜httpx / aiohttp：超时、重试、异常处
+ 理
+DESCRIPTION:核心（2.5h，先做这个）：httpx / aiohttp：超时、
+ 重试、异常处理\n加餐（有余力再做）：请求加一次失
+ 败重试，统计成功 / 失败条数\n当日产出：带重试的请
+ 求层\n日期：11月11日 周三
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：httpx / aiohttp：超时、重试、异
+ 常处理
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261112@agent-study
+DTSTART;TZID=Asia/Shanghai:20261112T193000
+DTEND;TZID=Asia/Shanghai:20261112T220000
+SUMMARY:第2周 任务一｜logging 结构化日志 + argparse 命令行
+ 参数
+DESCRIPTION:核心（2.5h，先做这个）：logging 结构化日志 + a
+ rgparse 命令行参数\n加餐（有余力再做）：日志从 print 
+ 换成 logging，加时间戳与级别\n当日产出：可配置脚本\n
+ 日期：11月12日 周四
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：logging 结构化日志 + argparse 命
+ 令行
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261113@agent-study
+DTSTART;TZID=Asia/Shanghai:20261113T193000
+DTEND;TZID=Asia/Shanghai:20261113T220000
+SUMMARY:第2周 任务一｜调试：读报错栈、断点（pdb / VSCode
+ ）复现一次失败
+DESCRIPTION:核心（2.5h，先做这个）：调试：读报错栈、断
+ 点（pdb / VSCode）复现一次失败\n加餐（有余力再做）：
+ 故意制造一个报错，练习读报错栈二分定位\n当日产出
+ ：调试过程记录\n日期：11月13日 周五
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：调试：读报错栈、断点（pdb / V
+ SCode）复现一次
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261114@agent-study
+DTSTART;TZID=Asia/Shanghai:20261114T193000
+DTEND;TZID=Asia/Shanghai:20261114T223000
+SUMMARY:第2周 任务一｜汇总结果输出为 JSON / 表格，完善 
+ README 运行示例
+DESCRIPTION:核心（3.0h，先做这个）：汇总结果输出为 JSON 
+ / 表格，完善 README 运行示例\n加餐（有余力再做）：结
+ 果改成对齐表格打印，再补一版 JSON 输出\n当日产出：
+ 汇总输出示例\n日期：11月14日 周六
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：汇总结果输出为 JSON / 表格，
+ 完善 README 
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261115@agent-study
+DTSTART;TZID=Asia/Shanghai:20261115T193000
+DTEND;TZID=Asia/Shanghai:20261115T210000
+SUMMARY:第2周 任务一｜复盘：提交 + 分支练习（feature 分
+ 支 → merge）
+DESCRIPTION:核心（1.5h，先做这个）：复盘：提交 + 分支练
+ 习（feature 分支 → merge）\n加餐（有余力再做）：把本
+ 周代码整理到 feature 分支并合并回主分支\n当日产出：
+ 分支合并记录\n日期：11月15日 周日
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：复盘：提交 + 分支练习（feature
+  分支 → me
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261116@agent-study
+DTSTART;TZID=Asia/Shanghai:20261116T193000
+DTEND;TZID=Asia/Shanghai:20261116T220000
+SUMMARY:第3周 任务一｜Git 核心：提交规范、分支、合并
+ 、回退（reset / rev
+DESCRIPTION:核心（2.5h，先做这个）：Git 核心：提交规范
+ 、分支、合并、回退（reset / revert）\n加餐（有余力再做
+ ）：分别做一次 reset --hard 与 revert，记录两者区别\n当
+ 日产出：操作过程截图\n日期：11月16日 周一
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：Git 核心：提交规范、分支、合
+ 并、回退（reset /
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261117@agent-study
+DTSTART;TZID=Asia/Shanghai:20261117T193000
+DTEND;TZID=Asia/Shanghai:20261117T220000
+SUMMARY:第3周 任务一｜远程协作：PR 流程、.gitignore、READM
+ E 结构规
+DESCRIPTION:核心（2.5h，先做这个）：远程协作：PR 流程、
+ .gitignore、README 结构规范\n加餐（有余力再做）：在 GitHu
+ b 上开一个 PR 并自己合并一次\n当日产出：PR 记录\n日期
+ ：11月17日 周二
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：远程协作：PR 流程、.gitignore、
+ README
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261118@agent-study
+DTSTART;TZID=Asia/Shanghai:20261118T193000
+DTEND;TZID=Asia/Shanghai:20261118T220000
+SUMMARY:第3周 任务一｜异步进阶：并发数限制（Semaphore）
+ + 失败重试
+DESCRIPTION:核心（2.5h，先做这个）：异步进阶：并发数限
+ 制（Semaphore）+ 失败重试\n加餐（有余力再做）：Semaphore
+  限并发改成 3，对比总耗时\n当日产出：限流版脚本\n日
+ 期：11月18日 周三
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：异步进阶：并发数限制（Semapho
+ re）+ 失败重试
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261119@agent-study
+DTSTART;TZID=Asia/Shanghai:20261119T193000
+DTEND;TZID=Asia/Shanghai:20261119T220000
+SUMMARY:第3周 任务一｜补全类型提示，加一个冒烟测试（
+ pytest 可选）
+DESCRIPTION:核心（2.5h，先做这个）：补全类型提示，加一
+ 个冒烟测试（pytest 可选）\n加餐（有余力再做）：补全
+ 类型提示后跑 mypy，修掉 3 个报错\n当日产出：测试通过
+ 截图\n日期：11月19日 周四
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：补全类型提示，加一个冒烟测
+ 试（pytest 可选）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261120@agent-study
+DTSTART;TZID=Asia/Shanghai:20261120T193000
+DTEND;TZID=Asia/Shanghai:20261120T220000
+SUMMARY:第3周 任务一｜整理截图：环境搭建过程、脚本运
+ 行结果
+DESCRIPTION:核心（2.5h，先做这个）：整理截图：环境搭建
+ 过程、脚本运行结果\n加餐（有余力再做）：按 task01 建
+ 截图文件夹，命名 01-环境.png 这类\n当日产出：截图素
+ 材\n日期：11月20日 周五
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：整理截图：环境搭建过程、脚
+ 本运行结果
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261121@agent-study
+DTSTART;TZID=Asia/Shanghai:20261121T193000
+DTEND;TZID=Asia/Shanghai:20261121T223000
+SUMMARY:第3周 任务一｜写学习记录 PDF（截图 + 笔记），
+ 按验收标准逐条自查
+DESCRIPTION:核心（3.0h，先做这个）：写学习记录 PDF（截
+ 图 + 笔记），按验收标准逐条自查\n加餐（有余力再做
+ ）：PDF 里加一页「遇到的问题与解决」\n当日产出：task
+ 01-env.pdf\n日期：11月21日 周六
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：写学习记录 PDF（截图 + 笔记）
+ ，按验收标准逐条自查
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261122@agent-study
+DTSTART;TZID=Asia/Shanghai:20261122T193000
+DTEND;TZID=Asia/Shanghai:20261122T210000
+SUMMARY:第3周 任务一｜上传任务一（homework.redrock.team），
+ 预习 
+DESCRIPTION:核心（1.5h，先做这个）：上传任务一（homework.
+ redrock.team），预习 HTTP\n加餐（有余力再做）：上传后回
+ 看验收标准，把没覆盖的写进下周计划\n当日产出：上
+ 传完成截图\n日期：11月22日 周日
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：上传任务一（homework.redrock.team
+ ）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261123@agent-study
+DTSTART;TZID=Asia/Shanghai:20261123T193000
+DTEND;TZID=Asia/Shanghai:20261123T220000
+SUMMARY:第4周 任务二｜HTTP / REST / JSON：请求方法、状态码
+ 、报文结构
+DESCRIPTION:核心（2.5h，先做这个）：HTTP / REST / JSON：请求
+ 方法、状态码、报文结构（MDN）\n加餐（有余力再做）
+ ：用浏览器 F12 看一个真实请求的请求头与响应头\n当日
+ 产出：概念笔记\n日期：11月23日 周一
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：HTTP / REST / JSON：请求方法、状
+ 态码、
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261124@agent-study
+DTSTART;TZID=Asia/Shanghai:20261124T193000
+DTEND;TZID=Asia/Shanghai:20261124T220000
+SUMMARY:第4周 任务二｜装 FastAPI + uvicorn，跑通 hello wor
+DESCRIPTION:核心（2.5h，先做这个）：装 FastAPI + uvicorn，跑
+ 通 hello world 与 /docs\n加餐（有余力再做）：在 /docs 里把
+ 每个接口手动试一遍参数\n当日产出：首次启动截图\n日
+ 期：11月24日 周二
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：装 FastAPI + uvicorn，跑通 hello
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261125@agent-study
+DTSTART;TZID=Asia/Shanghai:20261125T193000
+DTEND;TZID=Asia/Shanghai:20261125T220000
+SUMMARY:第4周 任务二｜路由、路径 / 查询参数、Pydantic v2 
+ 校验
+DESCRIPTION:核心（2.5h，先做这个）：路由、路径 / 查询参
+ 数、Pydantic v2 校验\n加餐（有余力再做）：故意传错类
+ 型，看 Pydantic 的报错长什么样\n当日产出：参数校验 dem
+ o\n日期：11月25日 周三
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：路由、路径 / 查询参数、Pydanti
+ c v2 校验
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261126@agent-study
+DTSTART;TZID=Asia/Shanghai:20261126T193000
+DTEND;TZID=Asia/Shanghai:20261126T220000
+SUMMARY:第4周 任务二｜分层：router / service / model 拆分项目
+DESCRIPTION:核心（2.5h，先做这个）：分层：router / service /
+  model 拆分项目骨架\n加餐（有余力再做）：把 router 拆
+ 成两个文件，确认 /docs 仍正常\n当日产出：项目骨架\n
+ 日期：11月26日 周四
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：分层：router / service / model 
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261127@agent-study
+DTSTART;TZID=Asia/Shanghai:20261127T193000
+DTEND;TZID=Asia/Shanghai:20261127T220000
+SUMMARY:第4周 任务二｜依赖注入 Depends + 配置管理（.env + 
+ pydan
+DESCRIPTION:核心（2.5h，先做这个）：依赖注入 Depends + 配
+ 置管理（.env + pydantic-settings）\n加餐（有余力再做）：
+ 把配置搬到 .env，重启验证生效\n当日产出：配置化服务
+ \n日期：11月27日 周五
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：依赖注入 Depends + 配置管理（.e
+ nv + p
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261128@agent-study
+DTSTART;TZID=Asia/Shanghai:20261128T193000
+DTEND;TZID=Asia/Shanghai:20261128T223000
+SUMMARY:第4周 任务二｜统一错误响应与全局异常处理器
+DESCRIPTION:核心（3.0h，先做这个）：统一错误响应与全局
+ 异常处理器\n加餐（有余力再做）：错误响应加 code / mes
+ sage 字段，用 curl 验证\n当日产出：错误格式统一\n日期
+ ：11月28日 周六
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：统一错误响应与全局异常处理
+ 器
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261129@agent-study
+DTSTART;TZID=Asia/Shanghai:20261129T193000
+DTEND;TZID=Asia/Shanghai:20261129T210000
+SUMMARY:第4周 任务二｜复盘 + 提交，检查接口语义是否清
+ 晰
+DESCRIPTION:核心（1.5h，先做这个）：复盘 + 提交，检查接
+ 口语义是否清晰\n加餐（有余力再做）：整理本周接口
+ 清单表格，后面复用\n当日产出：commit 记录\n日期：11月
+ 29日 周日
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：复盘 + 提交，检查接口语义是
+ 否清晰
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261130@agent-study
+DTSTART;TZID=Asia/Shanghai:20261130T193000
+DTEND;TZID=Asia/Shanghai:20261130T220000
+SUMMARY:第5周 任务二｜SQL 基础 + SQLite；用 SQLModel / SQL
+DESCRIPTION:核心（2.5h，先做这个）：SQL 基础 + SQLite；用 S
+ QLModel / SQLAlchemy 建模\n加餐（有余力再做）：用 sqlite3 
+ 命令行手动建表、查表各一次\n当日产出：数据模型\n日
+ 期：11月30日 周一
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：SQL 基础 + SQLite；用 SQLModel /
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261201@agent-study
+DTSTART;TZID=Asia/Shanghai:20261201T193000
+DTEND;TZID=Asia/Shanghai:20261201T220000
+SUMMARY:第5周 任务二｜CRUD 接口（增删改查）+ Pydantic 校验
+DESCRIPTION:核心（2.5h，先做这个）：CRUD 接口（增删改查
+ ）+ Pydantic 校验\n加餐（有余力再做）：给 CRUD 加一个按
+ 名字模糊查询\n当日产出：CRUD 可用\n日期：12月1日 周二
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：CRUD 接口（增删改查）+ Pydantic 
+ 校验
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261202@agent-study
+DTSTART;TZID=Asia/Shanghai:20261202T193000
+DTEND;TZID=Asia/Shanghai:20261202T220000
+SUMMARY:第5周 任务二｜分页 / 过滤参数、统一错误处理
+DESCRIPTION:核心（2.5h，先做这个）：分页 / 过滤参数、统
+ 一错误处理\n加餐（有余力再做）：加分页参数 page / siz
+ e 并验证边界值\n当日产出：接口完善\n日期：12月2日 周
+ 三
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：分页 / 过滤参数、统一错误处
+ 理
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261203@agent-study
+DTSTART;TZID=Asia/Shanghai:20261203T193000
+DTEND;TZID=Asia/Shanghai:20261203T220000
+SUMMARY:第5周 任务二｜SSE 原理（MDN）+ StreamingResponse 流
+DESCRIPTION:核心（2.5h，先做这个）：SSE 原理（MDN）+ Stream
+ ingResponse 流式接口\n加餐（有余力再做）：用浏览器 Even
+ tSource 接收 SSE，观察逐条到达\n当日产出：流式接口\n日
+ 期：12月3日 周四
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：SSE 原理（MDN）+ StreamingRespon
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261204@agent-study
+DTSTART;TZID=Asia/Shanghai:20261204T193000
+DTEND;TZID=Asia/Shanghai:20261204T220000
+SUMMARY:第5周 任务二｜用 curl 验证流式输出，处理断线与
+ 超时
+DESCRIPTION:核心（2.5h，先做这个）：用 curl 验证流式输出
+ ，处理断线与超时\n加餐（有余力再做）：模拟客户端
+ 断线，看服务端日志报什么\n当日产出：流式验证截图\n
+ 日期：12月4日 周五
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：用 curl 验证流式输出，处理断
+ 线与超时
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261205@agent-study
+DTSTART;TZID=Asia/Shanghai:20261205T193000
+DTEND;TZID=Asia/Shanghai:20261205T223000
+SUMMARY:第5周 任务二｜/health 健康检查 + 结构化日志 + 请
+ 求 ID
+DESCRIPTION:核心（3.0h，先做这个）：/health 健康检查 + 结
+ 构化日志 + 请求 ID\n加餐（有余力再做）：日志加耗时
+ 字段，找出最慢的那个接口\n当日产出：按 ID 串联的日
+ 志\n日期：12月5日 周六
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：/health 健康检查 + 结构化日志 +
+  请求 ID
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261206@agent-study
+DTSTART;TZID=Asia/Shanghai:20261206T193000
+DTEND;TZID=Asia/Shanghai:20261206T210000
+SUMMARY:第5周 任务二｜复盘：用 curl 逐个接口回归一遍
+DESCRIPTION:核心（1.5h，先做这个）：复盘：用 curl 逐个接
+ 口回归一遍\n加餐（有余力再做）：写一个 curl 脚本，
+ 一次跑完 6 个接口\n当日产出：接口回归清单\n日期：12
+ 月6日 周日
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：复盘：用 curl 逐个接口回归一
+ 遍
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261207@agent-study
+DTSTART;TZID=Asia/Shanghai:20261207T193000
+DTEND;TZID=Asia/Shanghai:20261207T220000
+SUMMARY:第6周 任务二｜Docker 基础：镜像、容器、仓库
+DESCRIPTION:核心（2.5h，先做这个）：Docker 基础：镜像、
+ 容器、仓库\n加餐（有余力再做）：docker ps / images / logs 
+ 各用 3 次，记熟\n当日产出：概念笔记\n日期：12月7日 
+ 周一
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：Docker 基础：镜像、容器、仓库
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261208@agent-study
+DTSTART;TZID=Asia/Shanghai:20261208T193000
+DTEND;TZID=Asia/Shanghai:20261208T220000
+SUMMARY:第6周 任务二｜写 Dockerfile（多阶段构建）+ .dockeri
+ gno
+DESCRIPTION:核心（2.5h，先做这个）：写 Dockerfile（多阶段
+ 构建）+ .dockerignore\n加餐（有余力再做）：对比单阶段
+ 与多阶段构建的镜像大小\n当日产出：镜像构建成功\n日
+ 期：12月8日 周二
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：写 Dockerfile（多阶段构建）+ .do
+ cker
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261209@agent-study
+DTSTART;TZID=Asia/Shanghai:20261209T193000
+DTEND;TZID=Asia/Shanghai:20261209T220000
+SUMMARY:第6周 任务二｜docker-compose 编排 + 数据卷；验证重
+ 启后数据仍
+DESCRIPTION:核心（2.5h，先做这个）：docker-compose 编排 + 数
+ 据卷；验证重启后数据仍在\n加餐（有余力再做）：删
+ 掉容器再启动，验证数据卷里的数据还在\n当日产出：
+ 持久化验证\n日期：12月9日 周三
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：docker-compose 编排 + 数据卷；验
+ 证重启
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261210@agent-study
+DTSTART;TZID=Asia/Shanghai:20261210T193000
+DTEND;TZID=Asia/Shanghai:20261210T220000
+SUMMARY:第6周 任务二｜Chroma 本地向量库：写入几条文本
+ 并完成相似度检索
+DESCRIPTION:核心（2.5h，先做这个）：Chroma 本地向量库：
+ 写入几条文本并完成相似度检索\n加餐（有余力再做）
+ ：Chroma 检索改成 top-3 并打印相似度分数\n当日产出：检
+ 索结果\n日期：12月10日 周四
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：Chroma 本地向量库：写入几条文
+ 本并完成相似度检索
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261211@agent-study
+DTSTART;TZID=Asia/Shanghai:20261211T193000
+DTEND;TZID=Asia/Shanghai:20261211T220000
+SUMMARY:第6周 任务二｜整理容器日志、接口与数据库截图
+DESCRIPTION:核心（2.5h，先做这个）：整理容器日志、接口
+ 与数据库截图\n加餐（有余力再做）：整理容器启动日
+ 志截图（带时间戳）\n当日产出：截图素材\n日期：12月1
+ 1日 周五
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：整理容器日志、接口与数据库
+ 截图
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261212@agent-study
+DTSTART;TZID=Asia/Shanghai:20261212T193000
+DTEND;TZID=Asia/Shanghai:20261212T223000
+SUMMARY:第6周 任务二｜写学习记录 PDF，按验收标准逐条
+ 自查
+DESCRIPTION:核心（3.0h，先做这个）：写学习记录 PDF，按
+ 验收标准逐条自查\n加餐（有余力再做）：PDF 里画一张
+ 架构图（手画拍照也行）\n当日产出：task02-api.pdf\n日期
+ ：12月12日 周六
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：写学习记录 PDF，按验收标准逐
+ 条自查
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261213@agent-study
+DTSTART;TZID=Asia/Shanghai:20261213T193000
+DTEND;TZID=Asia/Shanghai:20261213T210000
+SUMMARY:第6周 任务二｜上传任务二，预习 LLM API 文档
+DESCRIPTION:核心（1.5h，先做这个）：上传任务二，预习 LL
+ M API 文档\n加餐（有余力再做）：把 Dockerfile 与 compose 
+ 用法写进 README\n当日产出：上传完成截图\n日期：12月13
+ 日 周日
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：上传任务二，预习 LLM API 文档
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261214@agent-study
+DTSTART;TZID=Asia/Shanghai:20261214T193000
+DTEND;TZID=Asia/Shanghai:20261214T220000
+SUMMARY:第7周 任务三｜token、上下文窗口、采样参数；读 
+ Attention 论文摘
+DESCRIPTION:核心（2.5h，先做这个）：token、上下文窗口、
+ 采样参数；读 Attention 论文摘要与图解\n加餐（有余力再
+ 做）：把上下文窗口换算成「大约多少汉字」记下来\n
+ 当日产出：概念笔记\n日期：12月14日 周一
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：token、上下文窗口、采样参数
+ ；读 Attention
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261215@agent-study
+DTSTART;TZID=Asia/Shanghai:20261215T193000
+DTEND;TZID=Asia/Shanghai:20261215T220000
+SUMMARY:第7周 任务三｜开通 DeepSeek / OpenAI，跑通第一次 ch
+ at 
+DESCRIPTION:核心（2.5h，先做这个）：开通 DeepSeek / OpenAI，
+ 跑通第一次 chat completion\n加餐（有余力再做）：同一个
+ 问题连调 3 次，看输出差异\n当日产出：首次调用截图\n
+ 日期：12月15日 周二
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：开通 DeepSeek / OpenAI，跑通第一
+ 次 c
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261216@agent-study
+DTSTART;TZID=Asia/Shanghai:20261216T193000
+DTEND;TZID=Asia/Shanghai:20261216T220000
+SUMMARY:第7周 任务三｜SDK 封装：超时、重试、错误码，
+ 记录 token 用量
+DESCRIPTION:核心（2.5h，先做这个）：SDK 封装：超时、重
+ 试、错误码，记录 token 用量\n加餐（有余力再做）：调
+ 用加超时 20s 与重试 2 次，统计失败率\n当日产出：封装
+ 好的客户端\n日期：12月16日 周三
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：SDK 封装：超时、重试、错误码
+ ，记录 token 用量
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261217@agent-study
+DTSTART;TZID=Asia/Shanghai:20261217T193000
+DTEND;TZID=Asia/Shanghai:20261217T220000
+SUMMARY:第7周 任务三｜temperature / top_p / max_tokens
+DESCRIPTION:核心（2.5h，先做这个）：temperature / top_p / max_t
+ okens 对比实验\n加餐（有余力再做）：temperature 从 0 到 1
+ .5 做 5 档对比\n当日产出：对比实验表 v1\n日期：12月17
+ 日 周四
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：temperature / top_p / max_to
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261218@agent-study
+DTSTART;TZID=Asia/Shanghai:20261218T193000
+DTEND;TZID=Asia/Shanghai:20261218T220000
+SUMMARY:第7周 任务三｜提示词基础：角色设定、明确指令
+ 、约束、分隔符
+DESCRIPTION:核心（2.5h，先做这个）：提示词基础：角色设
+ 定、明确指令、约束、分隔符\n加餐（有余力再做）：
+ 提示词加「只输出 JSON」约束，观察效果\n当日产出：提
+ 示词 v1\n日期：12月18日 周五
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：提示词基础：角色设定、明确
+ 指令、约束、分隔符
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261219@agent-study
+DTSTART;TZID=Asia/Shanghai:20261219T193000
+DTEND;TZID=Asia/Shanghai:20261219T223000
+SUMMARY:第7周 任务三｜few-shot 信息抽取（抽实体 / 写摘要
+ ）
+DESCRIPTION:核心（3.0h，先做这个）：few-shot 信息抽取（抽
+ 实体 / 写摘要）\n加餐（有余力再做）：few-shot 示例从 1
+  个加到 3 个，对比准确率\n当日产出：抽取结果\n日期
+ ：12月19日 周六
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：few-shot 信息抽取（抽实体 / 写
+ 摘要）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261220@agent-study
+DTSTART;TZID=Asia/Shanghai:20261220T193000
+DTEND;TZID=Asia/Shanghai:20261220T210000
+SUMMARY:第7周 任务三｜复盘 + 整理实验记录表（参数 → 
+ 输出差异）
+DESCRIPTION:核心（1.5h，先做这个）：复盘 + 整理实验记录
+ 表（参数 → 输出差异）\n加餐（有余力再做）：整理实
+ 验表：参数 → 输出差异 → 你的结论\n当日产出：实验
+ 记录\n日期：12月20日 周日
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：复盘 + 整理实验记录表（参数 
+ → 输出差异）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261221@agent-study
+DTSTART;TZID=Asia/Shanghai:20261221T193000
+DTEND;TZID=Asia/Shanghai:20261221T220000
+SUMMARY:第8周 任务三｜JSON Schema / response_format / 
+DESCRIPTION:核心（2.5h，先做这个）：JSON Schema / response_form
+ at / JSON mode 原理\n加餐（有余力再做）：读 DeepSeek JSON mo
+ de 文档，记下限制条件\n当日产出：笔记\n日期：12月21
+ 日 周一
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：JSON Schema / response_forma
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261222@agent-study
+DTSTART;TZID=Asia/Shanghai:20261222T193000
+DTEND;TZID=Asia/Shanghai:20261222T220000
+SUMMARY:第8周 任务三｜用 Pydantic 定义输出模型，让模型
+ 返回可解析 JSON
+DESCRIPTION:核心（2.5h，先做这个）：用 Pydantic 定义输出
+ 模型，让模型返回可解析 JSON\n加餐（有余力再做）：用
+  Pydantic 校验模型输出，故意喂错数据看报错\n当日产出
+ ：结构化输出 demo\n日期：12月22日 周二
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：用 Pydantic 定义输出模型，让模
+ 型返回可解析 J
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261223@agent-study
+DTSTART;TZID=Asia/Shanghai:20261223T193000
+DTEND;TZID=Asia/Shanghai:20261223T220000
+SUMMARY:第8周 任务三｜解析失败处理 + 一次自动重试
+DESCRIPTION:核心（2.5h，先做这个）：解析失败处理 + 一次
+ 自动重试\n加餐（有余力再做）：重试设 2 次，统计重
+ 试成功率\n当日产出：重试逻辑\n日期：12月23日 周三
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：解析失败处理 + 一次自动重试
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261224@agent-study
+DTSTART;TZID=Asia/Shanghai:20261224T193000
+DTEND;TZID=Asia/Shanghai:20261224T220000
+SUMMARY:第8周 任务三｜统计失败率与平均 token 消耗（小
+ 脚本）
+DESCRIPTION:核心（2.5h，先做这个）：统计失败率与平均 to
+ ken 消耗（小脚本）\n加餐（有余力再做）：把失败样例
+ 存进 failures/ 目录，标好日期\n当日产出：统计脚本\n日
+ 期：12月24日 周四
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：统计失败率与平均 token 消耗（
+ 小脚本）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261225@agent-study
+DTSTART;TZID=Asia/Shanghai:20261225T193000
+DTEND;TZID=Asia/Shanghai:20261225T220000
+SUMMARY:第8周 任务三｜提示词版本化 / 变量化，建失败样
+ 例库
+DESCRIPTION:核心（2.5h，先做这个）：提示词版本化 / 变量
+ 化，建失败样例库\n加餐（有余力再做）：提示词加版
+ 本号 v1 / v2，用文件名区分\n当日产出：提示词仓库\n日
+ 期：12月25日 周五
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：提示词版本化 / 变量化，建失
+ 败样例库
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261226@agent-study
+DTSTART;TZID=Asia/Shanghai:20261226T193000
+DTEND;TZID=Asia/Shanghai:20261226T223000
+SUMMARY:第8周 任务三｜问答服务：输入问题 → 返回固定
+ 字段 JSON
+DESCRIPTION:核心（3.0h，先做这个）：问答服务：输入问题
+  → 返回固定字段 JSON\n加餐（有余力再做）：抽 20 条问
+ 题跑一遍，记录成功率\n当日产出：问答服务 v1\n日期：
+ 12月26日 周六
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：问答服务：输入问题 → 返回
+ 固定字段 JSON
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261227@agent-study
+DTSTART;TZID=Asia/Shanghai:20261227T193000
+DTEND;TZID=Asia/Shanghai:20261227T210000
+SUMMARY:第8周 任务三｜复盘 + 抽样 20 次看稳定性
+DESCRIPTION:核心（1.5h，先做这个）：复盘 + 抽样 20 次看
+ 稳定性\n加餐（有余力再做）：把成功率与平均 token 写
+ 进实验记录\n当日产出：稳定性记录\n日期：12月27日 周
+ 日
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：复盘 + 抽样 20 次看稳定性
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261228@agent-study
+DTSTART;TZID=Asia/Shanghai:20261228T193000
+DTEND;TZID=Asia/Shanghai:20261228T220000
+SUMMARY:第9周 任务三｜流式对接 SSE，实现打字机效果
+DESCRIPTION:核心（2.5h，先做这个）：流式对接 SSE，实现
+ 打字机效果\n加餐（有余力再做）：对比流式与一次性
+ 返回的「首字延迟」\n当日产出：流式问答\n日期：12月2
+ 8日 周一
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：流式对接 SSE，实现打字机效果
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261229@agent-study
+DTSTART;TZID=Asia/Shanghai:20261229T193000
+DTEND;TZID=Asia/Shanghai:20261229T220000
+SUMMARY:第9周 任务三｜中断、超时、异常断流的处理
+DESCRIPTION:核心（2.5h，先做这个）：中断、超时、异常断
+ 流的处理\n加餐（有余力再做）：模拟用户中途取消，
+ 看服务端是否释放连接\n当日产出：边界处理记录\n日期
+ ：12月29日 周二
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：中断、超时、异常断流的处理
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261230@agent-study
+DTSTART;TZID=Asia/Shanghai:20261230T193000
+DTEND;TZID=Asia/Shanghai:20261230T220000
+SUMMARY:第9周 任务三｜成本控制：限流、缓存、预算与用
+ 量日志
+DESCRIPTION:核心（2.5h，先做这个）：成本控制：限流、缓
+ 存、预算与用量日志\n加餐（有余力再做）：算一次调
+ 用的 token 成本，换算成 1000 次多少钱\n当日产出：成本
+ 记录\n日期：12月30日 周三
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：成本控制：限流、缓存、预算
+ 与用量日志
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20261231@agent-study
+DTSTART;TZID=Asia/Shanghai:20261231T193000
+DTEND;TZID=Asia/Shanghai:20261231T220000
+SUMMARY:第9周 任务三｜提示词 v1 vs v2 对比实验
+DESCRIPTION:核心（2.5h，先做这个）：提示词 v1 vs v2 对比
+ 实验\n加餐（有余力再做）：v1 / v2 提示词各跑 10 次，
+ 比较稳定性\n当日产出：对比结论\n日期：12月31日 周四
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：提示词 v1 vs v2 对比实验
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20270101@agent-study
+DTSTART;TZID=Asia/Shanghai:20270101T193000
+DTEND;TZID=Asia/Shanghai:20270101T220000
+SUMMARY:第9周 任务三｜整理截图：API 调用、JSON 输出对比
+ 、流式效果
+DESCRIPTION:核心（2.5h，先做这个）：整理截图：API 调用
+ 、JSON 输出对比、流式效果\n加餐（有余力再做）：截图
+ 带上时间与 token 用量\n当日产出：截图素材\n日期：1月1
+ 日 周五
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：整理截图：API 调用、JSON 输出
+ 对比、流式效果
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20270102@agent-study
+DTSTART;TZID=Asia/Shanghai:20270102T193000
+DTEND;TZID=Asia/Shanghai:20270102T223000
+SUMMARY:第9周 任务三｜写学习记录 PDF，按验收标准逐条
+ 自查
+DESCRIPTION:核心（3.0h，先做这个）：写学习记录 PDF，按
+ 验收标准逐条自查\n加餐（有余力再做）：PDF 里加一页
+ 「成本与稳定性」小结\n当日产出：task03-llm.pdf\n日期：1
+ 月2日 周六
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：写学习记录 PDF，按验收标准逐
+ 条自查
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20270103@agent-study
+DTSTART;TZID=Asia/Shanghai:20270103T193000
+DTEND;TZID=Asia/Shanghai:20270103T210000
+SUMMARY:第9周 任务三｜上传任务三，预习 Function Calling 文
+ 档
+DESCRIPTION:核心（1.5h，先做这个）：上传任务三，预习 Fu
+ nction Calling 文档\n加餐（有余力再做）：上传后写 3 条
+ 下阶段要注意的事\n当日产出：上传完成截图\n日期：1
+ 月3日 周日
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：上传任务三，预习 Function Callin
+ g 文档
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20270104@agent-study
+DTSTART;TZID=Asia/Shanghai:20270104T193000
+DTEND;TZID=Asia/Shanghai:20270104T220000
+SUMMARY:第10周 任务四｜Function Calling 原理闭环：意图 → 
+ 执行 → 
+DESCRIPTION:核心（2.5h，先做这个）：Function Calling 原理闭
+ 环：意图 → 执行 → 回填\n加餐（有余力再做）：手画
+ 一遍 function calling 的消息序列\n当日产出：手绘流程图\n
+ 日期：1月4日 周一
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：Function Calling 原理闭环：意图 
+ → 执
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20270105@agent-study
+DTSTART;TZID=Asia/Shanghai:20270105T193000
+DTEND;TZID=Asia/Shanghai:20270105T220000
+SUMMARY:第10周 任务四｜用 JSON Schema 定义工具（查天气 + 
+ 查数据库）
+DESCRIPTION:核心（2.5h，先做这个）：用 JSON Schema 定义工
+ 具（查天气 + 查数据库）\n加餐（有余力再做）：故意
+ 给错参数类型，看模型与程序各自怎么反应\n当日产出
+ ：工具定义\n日期：1月5日 周二
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：用 JSON Schema 定义工具（查天气
+  + 查数据
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20270106@agent-study
+DTSTART;TZID=Asia/Shanghai:20270106T193000
+DTEND;TZID=Asia/Shanghai:20270106T220000
+SUMMARY:第10周 任务四｜多工具选择 + 调用循环（直到模
+ 型给出最终答案）
+DESCRIPTION:核心（2.5h，先做这个）：多工具选择 + 调用循
+ 环（直到模型给出最终答案）\n加餐（有余力再做）：
+ 加第 3 个工具，观察模型如何做选择\n当日产出：多工
+ 具 demo\n日期：1月6日 周三
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：多工具选择 + 调用循环（直到
+ 模型给出最终答案）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20270107@agent-study
+DTSTART;TZID=Asia/Shanghai:20270107T193000
+DTEND;TZID=Asia/Shanghai:20270107T220000
+SUMMARY:第10周 任务四｜参数错误、工具失败、超时的回
+ 退设计
+DESCRIPTION:核心（2.5h，先做这个）：参数错误、工具失败
+ 、超时的回退设计\n加餐（有余力再做）：工具加 5s 超
+ 时与失败兜底返回\n当日产出：失败回退分支\n日期：1
+ 月7日 周四
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：参数错误、工具失败、超时的
+ 回退设计
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20270108@agent-study
+DTSTART;TZID=Asia/Shanghai:20270108T193000
+DTEND;TZID=Asia/Shanghai:20270108T220000
+SUMMARY:第10周 任务四｜把任务二的 FastAPI 服务改造成可
+ 被调用的工具后端
+DESCRIPTION:核心（2.5h，先做这个）：把任务二的 FastAPI 服
+ 务改造成可被调用的工具后端\n加餐（有余力再做）：
+ 把 FastAPI 服务接成 HTTP 工具并跑通一次\n当日产出：服
+ 务接入\n日期：1月8日 周五
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：把任务二的 FastAPI 服务改造成
+ 可被调用的工具后端
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20270109@agent-study
+DTSTART;TZID=Asia/Shanghai:20270109T193000
+DTEND;TZID=Asia/Shanghai:20270109T223000
+SUMMARY:第10周 任务四｜记录完整链路日志，整理截图
+DESCRIPTION:核心（3.0h，先做这个）：记录完整链路日志，
+ 整理截图\n加餐（有余力再做）：用 trace id 把整条链路
+ 日志串起来\n当日产出：链路日志\n日期：1月9日 周六
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：记录完整链路日志，整理截图
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20270110@agent-study
+DTSTART;TZID=Asia/Shanghai:20270110T193000
+DTEND;TZID=Asia/Shanghai:20270110T210000
+SUMMARY:第10周 任务四｜复盘 + 补边界情况
+DESCRIPTION:核心（1.5h，先做这个）：复盘 + 补边界情况\n
+ 加餐（有余力再做）：列出 5 个边界情况，存进待办\n
+ 当日产出：缺陷清单\n日期：1月10日 周日
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：复盘 + 补边界情况
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20270111@agent-study
+DTSTART;TZID=Asia/Shanghai:20270111T193000
+DTEND;TZID=Asia/Shanghai:20270111T220000
+SUMMARY:第11周 任务四｜Embedding 原理、余弦相似度、top-k 
+ 检索
+DESCRIPTION:核心（2.5h，先做这个）：Embedding 原理、余弦
+ 相似度、top-k 检索\n加餐（有余力再做）：用 3 句话向
+ 朋友解释余弦相似度，录音回听\n当日产出：概念笔记\n
+ 日期：1月11日 周一
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：Embedding 原理、余弦相似度、top
+ -k 检索
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20270112@agent-study
+DTSTART;TZID=Asia/Shanghai:20270112T193000
+DTEND;TZID=Asia/Shanghai:20270112T220000
+SUMMARY:第11周 任务四｜文档切分策略 + Chroma 入库
+DESCRIPTION:核心（2.5h，先做这个）：文档切分策略 + Chroma
+  入库\n加餐（有余力再做）：对比 200 / 500 / 1000 字切分
+ 的检索效果\n当日产出：入库脚本\n日期：1月12日 周二
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：文档切分策略 + Chroma 入库
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20270113@agent-study
+DTSTART;TZID=Asia/Shanghai:20270113T193000
+DTEND;TZID=Asia/Shanghai:20270113T220000
+SUMMARY:第11周 任务四｜最小 RAG：检索 → 拼上下文 → 生
+ 成
+DESCRIPTION:核心（2.5h，先做这个）：最小 RAG：检索 → 拼
+ 上下文 → 生成\n加餐（有余力再做）：top-k 从 3 改成 8
+ ，看答案怎么变\n当日产出：RAG v1\n日期：1月13日 周三
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：最小 RAG：检索 → 拼上下文 →
+  生成
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20270114@agent-study
+DTSTART;TZID=Asia/Shanghai:20270114T193000
+DTEND;TZID=Asia/Shanghai:20270114T220000
+SUMMARY:第11周 任务四｜引用与溯源：返回来源片段 + 相
+ 似度分数
+DESCRIPTION:核心（2.5h，先做这个）：引用与溯源：返回来
+ 源片段 + 相似度分数\n加餐（有余力再做）：让回答必
+ 须带 [1][2] 编号引用\n当日产出：带引用的回答\n日期：1
+ 月14日 周四
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：引用与溯源：返回来源片段 + 
+ 相似度分数
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20270115@agent-study
+DTSTART;TZID=Asia/Shanghai:20270115T193000
+DTEND;TZID=Asia/Shanghai:20270115T220000
+SUMMARY:第11周 任务四｜评估：构造 10–20 条问题，记录
+ 命中率与答案质量
+DESCRIPTION:核心（2.5h，先做这个）：评估：构造 10–20 条
+ 问题，记录命中率与答案质量\n加餐（有余力再做）：
+ 构造 15 条问题，其中 5 条文档里没有\n当日产出：评测
+ 表\n日期：1月15日 周五
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：评估：构造 10–20 条问题，记
+ 录命中率与答案质量
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20270116@agent-study
+DTSTART;TZID=Asia/Shanghai:20270116T193000
+DTEND;TZID=Asia/Shanghai:20270116T223000
+SUMMARY:第11周 任务四｜定位一次错误回答（切分 / 检索 /
+  生成）并修复
+DESCRIPTION:核心（3.0h，先做这个）：定位一次错误回答（
+ 切分 / 检索 / 生成）并修复\n加餐（有余力再做）：定
+ 位 1 个错答案，写清是切分 / 检索 / 生成\n当日产出：
+ 复盘笔记\n日期：1月16日 周六
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：定位一次错误回答（切分 / 检
+ 索 / 生成）并修复
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20270117@agent-study
+DTSTART;TZID=Asia/Shanghai:20270117T193000
+DTEND;TZID=Asia/Shanghai:20270117T210000
+SUMMARY:第11周 任务四｜写学习记录 PDF 并上传任务四
+DESCRIPTION:核心（1.5h，先做这个）：写学习记录 PDF 并上
+ 传任务四\n加餐（有余力再做）：整理 PDF、上传、写复
+ 盘清单\n当日产出：task04-agent.pdf\n日期：1月17日 周日
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：写学习记录 PDF 并上传任务四
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20270118@agent-study
+DTSTART;TZID=Asia/Shanghai:20270118T193000
+DTEND;TZID=Asia/Shanghai:20270118T220000
+SUMMARY:第12周 收尾｜四份 PDF 命名与目录结构统一（task01
+ –task04）
+DESCRIPTION:核心（2.5h，先做这个）：四份 PDF 命名与目录
+ 结构统一（task01–task04）\n加餐（有余力再做）：四份 P
+ DF 统一页眉与命名规范\n当日产出：命名规范落地\n日期
+ ：1月18日 周一
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：四份 PDF 命名与目录结构统一
+ （task01–task
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20270119@agent-study
+DTSTART;TZID=Asia/Shanghai:20270119T193000
+DTEND;TZID=Asia/Shanghai:20270119T220000
+SUMMARY:第12周 收尾｜四个仓库 README 补齐（运行方式、依
+ 赖版本）
+DESCRIPTION:核心（2.5h，先做这个）：四个仓库 README 补齐
+ （运行方式、依赖版本）\n加餐（有余力再做）：README 
+ 加一节「常见问题」\n当日产出：README 全集\n日期：1月1
+ 9日 周二
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：四个仓库 README 补齐（运行方
+ 式、依赖版本）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20270120@agent-study
+DTSTART;TZID=Asia/Shanghai:20270120T193000
+DTEND;TZID=Asia/Shanghai:20270120T220000
+SUMMARY:第12周 收尾｜按验收标准逐条自查，列出缺口清单
+DESCRIPTION:核心（2.5h，先做这个）：按验收标准逐条自查
+ ，列出缺口清单\n加餐（有余力再做）：逐条自查，把
+ 缺口按修复成本排序\n当日产出：缺口清单\n日期：1月20
+ 日 周三
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：按验收标准逐条自查，列出缺
+ 口清单
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20270121@agent-study
+DTSTART;TZID=Asia/Shanghai:20270121T193000
+DTEND;TZID=Asia/Shanghai:20270121T220000
+SUMMARY:第12周 收尾｜补做缺口（优先补最薄弱的 1–2 项
+ ）
+DESCRIPTION:核心（2.5h，先做这个）：补做缺口（优先补最
+ 薄弱的 1–2 项）\n加餐（有余力再做）：补最贵的一项
+ （通常是 RAG 评估）\n当日产出：修补记录\n日期：1月21
+ 日 周四
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：补做缺口（优先补最薄弱的 1
+ –2 项）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20270122@agent-study
+DTSTART;TZID=Asia/Shanghai:20270122T193000
+DTEND;TZID=Asia/Shanghai:20270122T220000
+SUMMARY:第12周 收尾｜录一次「10 分钟按 README 复现」演示
+ （进阶项）
+DESCRIPTION:核心（2.5h，先做这个）：录一次「10 分钟按 RE
+ ADME 复现」演示（进阶项）\n加餐（有余力再做）：录 3 
+ 分钟演示视频（可选）\n当日产出：复现演示截图\n日期
+ ：1月22日 周五
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：录一次「10 分钟按 README 复现
+ 」演示（进阶项）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20270123@agent-study
+DTSTART;TZID=Asia/Shanghai:20270123T193000
+DTEND;TZID=Asia/Shanghai:20270123T223000
+SUMMARY:第12周 收尾｜总复盘：写阶段总结（会了什么、
+ 卡在哪、下一步）
+DESCRIPTION:核心（3.0h，先做这个）：总复盘：写阶段总结
+ （会了什么、卡在哪、下一步）\n加餐（有余力再做）
+ ：写 500 字阶段总结\n当日产出：复盘文档\n日期：1月23
+ 日 周六
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：总复盘：写阶段总结（会了什
+ 么、卡在哪、下一步）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20270124@agent-study
+DTSTART;TZID=Asia/Shanghai:20270124T193000
+DTEND;TZID=Asia/Shanghai:20270124T210000
+SUMMARY:第12周 收尾｜全部材料二次检查 + 上传确认
+DESCRIPTION:核心（1.5h，先做这个）：全部材料二次检查 + 
+ 上传确认\n加餐（有余力再做）：二次检查 + 归档，清
+ 单打勾\n当日产出：提交清单\n日期：1月24日 周日
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：全部材料二次检查 + 上传确认
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-day-20270125@agent-study
+DTSTART;TZID=Asia/Shanghai:20270125T193000
+DTEND;TZID=Asia/Shanghai:20270125T200000
+SUMMARY:第12周 收尾｜截止日：确认四份 PDF + 四个仓库全
+ 部提交
+DESCRIPTION:核心（0.5h，先做这个）：截止日：确认四份 PD
+ F + 四个仓库全部提交\n加餐（有余力再做）：截止日只
+ 做确认，不改代码\n当日产出：最终确认截图\n日期：1
+ 月25日 周一
+CATEGORIES:Agent学习
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始：截止日：确认四份 PDF + 四个仓
+ 库全部提交
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-deadline-20261122@agent-study
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
+SUMMARY:【截止】交任务一
+DESCRIPTION:异步脚本仓库 + 环境搭建与运行截图 PDF
+CATEGORIES:Agent作业截止
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:提醒：交任务一
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:提醒：交任务一
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-deadline-20261213@agent-study
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261214
+SUMMARY:【截止】交任务二
+DESCRIPTION:FastAPI + Docker 仓库 + 接口/数据库/容器截图 PDF
+CATEGORIES:Agent作业截止
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:提醒：交任务二
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:提醒：交任务二
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-deadline-20270103@agent-study
+DTSTART;VALUE=DATE:20270103
+DTEND;VALUE=DATE:20270104
+SUMMARY:【截止】交任务三
+DESCRIPTION:问答服务 + 提示词实验记录 + API/JSON/流式截图 
+ PDF
+CATEGORIES:Agent作业截止
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:提醒：交任务三
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:提醒：交任务三
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-deadline-20270117@agent-study
+DTSTART;VALUE=DATE:20270117
+DTEND;VALUE=DATE:20270118
+SUMMARY:【截止】交任务四
+DESCRIPTION:工具调用助手 + RAG 项目 + 链路/检索截图 PDF
+CATEGORIES:Agent作业截止
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:提醒：交任务四
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:提醒：交任务四
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agent-deadline-20270125@agent-study
+DTSTART;VALUE=DATE:20270125
+DTEND;VALUE=DATE:20270126
+SUMMARY:【截止】交总截止
+DESCRIPTION:四份 PDF + 四个仓库全部就位并完成终检
+CATEGORIES:Agent作业截止
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:提醒：交总截止
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:提醒：交总截止
+END:VALARM
+END:VEVENT
+END:VCALENDAR
