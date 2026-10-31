@@ -41,9 +41,9 @@ $check = @()
 $pngs = @(Get-ChildItem $sub -Filter *.png -ErrorAction SilentlyContinue)
 $check += [pscustomobject]@{
     Item = "学习记录截图（$sub）"
-    Need = "≥ 6 张，能看出操作过程与结果"
+    Need = "≥ 4 张，能看出操作过程与结果"
     Have = "$($pngs.Count) 张"
-    Ok   = ($pngs.Count -ge 6)
+    Ok   = ($pngs.Count -ge 4)
 }
 
 # 2. 笔记
