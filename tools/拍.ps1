@@ -37,14 +37,9 @@ public class CapHelper {
 
 [CapHelper]::MakeDpiAware()
 
-# 单行倒计时，截图前擦掉，不会留在图片里
-if (-not $NoCountdown) {
-    for ($i = $Delay; $i -ge 1; $i--) {
-        Write-Host -NoNewline ("`r   " + $i + " 秒后截图，别动键盘 …   ")
-        Start-Sleep -Seconds 1
-    }
-    Write-Host -NoNewline ("`r" + (" " * 120) + "`r")
-} else {
+# 静默等待：不打印任何文字（文字会进截图），只用一声提示音
+if ($Delay -gt 0) {
+    try { [console]::Beep(1200, 120) } catch { }
     Start-Sleep -Seconds $Delay
 }
 
