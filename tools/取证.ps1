@@ -59,5 +59,5 @@ Write-Host ("=" * 64) -ForegroundColor DarkCyan
 if (-not $NoShot) {
     Write-Host ""
     Write-Host " 上面就是证据，2 秒后自动截图…" -ForegroundColor Green
-    & (Join-Path $PSScriptRoot "拍.ps1") -Name "01-env-all" -Delay 2 -Quiet
+    & (Join-Path $PSScriptRoot "拍.ps1") -Name "01-env-all" -Delay 2 -NoCountdown
 }

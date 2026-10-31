@@ -1,11 +1,11 @@
 ﻿param(
     [string]$Name = "",
     [int]$Delay = 3,
-    [switch]$Quiet
+    [switch]$NoCountdown
 )
-# 一条命令 = 一张图，直接存进 docs\task01-env\
-#   .\tools\拍.ps1 02-hello-run
-#   .\tools\拍.ps1 03-vscode-overview -Delay 6
+# 一条命令 = 一张清晰截图，直接存进 docs\task01-env\
+#   .\tools\拍.ps1 03-vscode-overview
+#   .\tools\拍.ps1 04-some-name -Delay 6
 
 $root = Split-Path -Parent $PSScriptRoot
 Set-Location $root
@@ -20,28 +20,34 @@ $out = [System.IO.Path]::GetFullPath((Join-Path $dir $Name))
 
 Add-Type -AssemblyName System.Windows.Forms
 Add-Type -AssemblyName System.Drawing
+if (-not ("CapHelper" -as [type])) {
 Add-Type -TypeDefinition @"
 using System;
 using System.Runtime.InteropServices;
-using System.Text;
-public class Win32Cap {
-    [DllImport("user32.dll")] public static extern IntPtr GetForegroundWindow();
-    [DllImport("user32.dll", CharSet = CharSet.Auto)] public static extern int GetWindowText(IntPtr hWnd, StringBuilder text, int count);
-    public static string Title() {
-        var sb = new StringBuilder(512);
-        GetWindowText(GetForegroundWindow(), sb, 512);
-        return sb.ToString();
+public class CapHelper {
+    [DllImport("user32.dll")] public static extern bool SetProcessDPIAware();
+    [DllImport("shcore.dll")] public static extern int SetProcessDpiAwareness(int value);
+    public static void MakeDpiAware() {
+        try { SetProcessDpiAwareness(2); } catch { try { SetProcessDPIAware(); } catch { } }
     }
 }
 "@
-
-if (-not $Quiet) {
-    Write-Host ("== {0} 秒后截图 -> {1} ==" -f $Delay, $Name) -ForegroundColor Cyan
-    Write-Host "   这 3 秒里不要动鼠标键盘，等提示" -ForegroundColor DarkGray
+# 按屏幕真实分辨率采集（2560x1600），而不是缩放后的 1707x1067
 }
-Start-Sleep -Seconds $Delay
 
-$title = [Win32Cap]::Title()
+[CapHelper]::MakeDpiAware()
+
+# 单行倒计时，截图前擦掉，不会留在图片里
+if (-not $NoCountdown) {
+    for ($i = $Delay; $i -ge 1; $i--) {
+        Write-Host -NoNewline ("`r   " + $i + " 秒后截图，别动键盘 …   ")
+        Start-Sleep -Seconds 1
+    }
+    Write-Host -NoNewline ("`r" + (" " * 120) + "`r")
+} else {
+    Start-Sleep -Seconds $Delay
+}
+
 $bounds = [System.Windows.Forms.Screen]::PrimaryScreen.Bounds
 $bmp = New-Object System.Drawing.Bitmap($bounds.Width, $bounds.Height)
 $g = [System.Drawing.Graphics]::FromImage($bmp)
@@ -49,10 +55,10 @@ $g.CopyFromScreen($bounds.Location, [System.Drawing.Point]::Empty, $bounds.Size)
 $g.Dispose()
 $bmp.Save($out, [System.Drawing.Imaging.ImageFormat]::Png)
 
-# 底部是否有状态栏（只作提示，不拦）
+# 检查最底部是否有状态栏（纯色 = 状态栏没进画面）
 $vals = New-Object System.Collections.Generic.List[double]
-for ($x = 2; $x -lt $bmp.Width - 2; $x += 40) {
-    for ($y = $bmp.Height - 24; $y -lt $bmp.Height - 3; $y += 7) {
+for ($x = 2; $x -lt $bmp.Width - 2; $x += 50) {
+    for ($y = $bmp.Height - 30; $y -lt $bmp.Height - 4; $y += 8) {
         $c = $bmp.GetPixel($x, $y)
         $vals.Add(([double]$c.R + [double]$c.G + [double]$c.B) / 3.0)
     }
@@ -66,11 +72,17 @@ $sd = [math]::Sqrt($sum / $vals.Count)
 $info = Get-Item $out
 Write-Host ""
 Write-Host ("已保存: " + $info.FullName) -ForegroundColor Green
-Write-Host ("大小: " + [math]::Round($info.Length / 1KB, 1) + " KB   当前窗口: " + $title)
-if ($sd -lt 4 -and $Name -like "*overview*") {
-    Write-Host "注意: 这是整体图，但底部没有状态栏（纯色）——请确认 视图>外观>状态栏 已勾选、窗口已最大化，再重拍一次" -ForegroundColor Yellow
-} elseif ($sd -lt 4) {
-    Write-Host "（底部是纯色，属正常：终端占满全屏时没有状态栏）" -ForegroundColor DarkGray
+Write-Host ("大小: " + [math]::Round($info.Length / 1KB, 1) + " KB   分辨率: " + $bounds.Width + "x" + $bounds.Height)
+
+if ($sd -lt 4) {
+    if ($Name -like "*overview*") {
+        Write-Host "不合格提示: 这是整体图，但底部没有状态栏。" -ForegroundColor Red
+        Write-Host "   1) 双击「终端」标签还原面板，让编辑区出现代码" -ForegroundColor Yellow
+        Write-Host "   2) 菜单 视图 > 外观 > 状态栏，确认已勾选" -ForegroundColor Yellow
+        Write-Host "   3) 重跑本命令覆盖同一文件名即可" -ForegroundColor Yellow
+    } else {
+        Write-Host "（底部纯色属正常：终端占满全屏时看不到状态栏）" -ForegroundColor DarkGray
+    }
 } else {
-    Write-Host "底部检测到状态栏，整体图合格。" -ForegroundColor DarkGray
+    Write-Host "底部检测到状态栏，整体图合格。" -ForegroundColor Green
 }

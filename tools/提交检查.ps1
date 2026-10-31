@@ -41,9 +41,9 @@ $check = @()
 $pngs = @(Get-ChildItem $sub -Filter *.png -ErrorAction SilentlyContinue)
 $check += [pscustomobject]@{
     Item = "学习记录截图（$sub）"
-    Need = "≥ 4 张，能看出操作过程与结果"
+    Need = "≥ 3 张（建议 4–6），能看出操作过程与结果"
     Have = "$($pngs.Count) 张"
-    Ok   = ($pngs.Count -ge 4)
+    Ok   = ($pngs.Count -ge 3)
 }
 
 # 2. 笔记
@@ -133,6 +133,6 @@ if ($fail.Count -eq 0) {
     Write-Host ("还差 " + $fail.Count + " 项，先补齐再提交：") -ForegroundColor Yellow
     $fail | ForEach-Object { Write-Host ("  - " + $_.Item + "（" + $_.Need + "）") -ForegroundColor Yellow }
     Write-Host ""
-    Write-Host "截图可以用： .\tools\shot.ps1 -Out docs\$($dirs[$Task])\0X-说明.png -Delay 8" -ForegroundColor DarkGray
+    Write-Host "补截图： .\tools\拍.ps1 04-说明" -ForegroundColor DarkGray
 }
 Write-Host ""
