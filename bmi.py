@@ -1,16 +1,30 @@
-height = float(input("请输入你的身高（米）："))
-weight = float(input("请输入你的体重（公斤）："))
-bmi = weight/(height**2)
-print(f"你的 BMI 是:{bmi:.1f}")
-if bmi<18.5:
-    print("判断:偏瘦 ")
-    print("建议:需要注意饮食和营养")
-elif bmi<24:
-    print("判断:正常 ")
-    print("建议:注意保持良好的生活习惯")
-elif bmi<28:
-    print("判断:超重 ")
-    print("建议:需要注意饮食和运动")
-else:
-    print("判断:肥胖 ")
-    print("建议:需要控制饮食并且保持良好的作息")
+def calc_bmi(height, weight):
+    return weight / (height ** 2)
+def judge(bmi):
+    if bmi<18.5:
+        return"偏瘦"
+    elif bmi<24:
+        return"正常"
+    elif bmi<28:
+        return"超重"
+    else:
+        return"肥胖"
+def advice(bmi):
+    if bmi<18.5:
+        return"补充营养"
+    elif bmi<24:
+        return"保持健康的方式"
+    elif bmi<28:
+        return"适当运动，控制饮食"
+    else:
+        return"加强锻炼，控制饮食"
+
+def main():
+    height = float(input("请输入身高（米）："))
+    weight = float(input("请输入体重（公斤）："))
+    bmi = calc_bmi(height,weight)
+    print(f"你的 BMI 是:{bmi:.1f}")
+    print(f"判断:{judge(bmi)}")
+    print(f"建议:{advice(bmi)}")
+if __name__ =="__main__":
+        main()
