@@ -2,6 +2,7 @@
 __pycache__/
 *.pyc
 .env
+.vscode/
 
 # 学习记录（含个人信息，只上传作业系统，不进公开仓库）
 docs/task01-env_学习记录.pdf

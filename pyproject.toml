@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-study"
+version = "0.1.0"
+description = "红岩网校 AI 开发与应用部 · Agent 方向第一阶段学习仓库（Python 与开发环境）"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.28",
+    "python-dotenv>=1.0",
+]
+
+[tool.setuptools]
+py-modules = ["async_fetch_cli", "async_fetch", "async_demo", "bmi", "hello"]

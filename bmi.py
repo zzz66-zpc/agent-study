@@ -1,5 +1,5 @@
 class BMI:
-    def __init__(self,height:float,weight:float):
+    def __init__(self, height: float, weight: float) -> None:
         self.height = height
         self.weight = weight
     def value(self) -> float:
