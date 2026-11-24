@@ -1,10 +1,12 @@
 ﻿param(
     [string]$Name = "",
     [int]$Delay = 3,
+    [string]$Task = "task01-env",
     [switch]$NoCountdown
 )
-# 一条命令 = 一张清晰截图，直接存进 docs\task01-env\
+# 一条命令 = 一张清晰截图，存进 docs\<Task>\
 #   .\tools\拍.ps1 03-vscode-overview
+#   .\tools\拍.ps1 17-sse -Task task02-api
 #   .\tools\拍.ps1 04-some-name -Delay 6
 
 $root = Split-Path -Parent $PSScriptRoot
@@ -14,7 +16,7 @@ if ([string]::IsNullOrWhiteSpace($Name)) {
     $Name = "shot-" + (Get-Date -Format "yyMMdd-HHmmss")
 }
 if ($Name -notmatch "\.png$") { $Name = $Name + ".png" }
-$dir = Join-Path $root "docs\task01-env"
+$dir = Join-Path $root ("docs\" + $Task)
 if (-not (Test-Path $dir)) { New-Item -ItemType Directory -Force -Path $dir | Out-Null }
 $out = [System.IO.Path]::GetFullPath((Join-Path $dir $Name))
 
